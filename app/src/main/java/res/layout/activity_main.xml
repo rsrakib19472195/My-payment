@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F3F7F5">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TRANSACTION READER" android:textStyle="bold" android:textSize="23sp" android:textColor="#064E3B" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="bKash / Nagad notification test" android:textSize="15sp" android:textColor="#4B635A" />
+        <TextView android:id="@+id/accessStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:padding="14dp" android:background="#E0F2E9" android:text="Notification access status: checking..." android:textColor="#064E3B" />
+        <Button android:id="@+id/accessButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Enable Notification Access" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="LATEST MATCHING NOTIFICATION" android:textStyle="bold" android:textColor="#064E3B" android:textSize="16sp" />
+        <TextView android:id="@+id/resultText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:padding="16dp" android:background="#FFFFFF" android:text="No matching notification received yet. Make sure notifications are enabled for your payment app." android:textColor="#26352F" android:textSize="15sp" />
+        <Button android:id="@+id/refreshButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Refresh latest result" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Privacy: this starter version processes notification text locally on this phone. It does not send anything to a server yet. Only enable access if you understand and consent to the notification data being read." android:textColor="#6B4F00" android:background="#FFF4CC" android:padding="12dp" android:textSize="13sp" />
+    </LinearLayout>
+</ScrollView>
