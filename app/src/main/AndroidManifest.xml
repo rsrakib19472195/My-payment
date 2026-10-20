@@ -1,5 +1,14 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+   <service
+    android:name=".PaymentNotificationListener"
+    android:label="Transaction Reader"
+    android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+    android:exported="true">
+    <intent-filter>
+        <action android:name="android.service.notification.NotificationListenerService" />
+    </intent-filter>
+</service>
     <application
         android:label="Transaction Reader"
         android:theme="@android:style/Theme.Material.Light.NoActionBar">
